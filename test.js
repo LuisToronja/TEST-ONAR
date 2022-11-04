@@ -8,7 +8,10 @@ function invertDigits(){
 }
 
 function binaryToDecimal(){
-
+    for (let i = 0; i < dataArray.length; i++) {
+        dataArray[i] = parseInt(dataArray[i], 2);
+        console.log(dataArray[i]);
+    }
 }
 
 function decimalToASCII(){
@@ -21,3 +24,4 @@ var dataArray = ['0100110', '0010000', '0001010', '011111', '0010111', '0011110'
     '0011110', '0001011', '011111', '0010101', '0010000', '0011101', '011110'];
 
 invertDigits();
+binaryToDecimal();
